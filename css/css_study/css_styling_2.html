@@ -1,0 +1,31 @@
+<!-- CSS를 HTML에 연결하는 방법은 (1) 인라인 스타일, (2) 내부 스타일시트, (3) 외부 스타일시트로 나뉨 -->
+<!-- 1. 인라인 스타일(0순위!) : HTML 요소에 직접 style 속성을 사용해 CSS에 적용 -->
+<!-- 2. 내부 스타일시트 : HTML 문서의 <head> 태그를 사용해 CSS를 작성 -->
+<!-- 3. 외부 스타일시트 : 별도의 CSS 파일을 만들고, HTML에서 <link> 태그로 연결 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CSS 연결 방법 실습</title>
+    <link rel="stylesheet" href="../CSS_02_01.css"> <!-- 3. 외부 스타일시트 적용 -->
+ <style>
+ h1 {
+ color: blue;
+ text-align: center;
+ }
+ p {
+ background-color: lightgray;
+ padding: 10px;
+ }
+ </style>   <!-- 2. 내부 스타일 시트 적용 -->
+
+</head>
+<body>
+ <h1>CSS 연결 방법 테스트</h1>
+<p style="color: red; font-size: 18px; font-weight: bold;">첫 번째 문단입니다.</p>  <!-- 1. 인라인 스타일 적용 -->
+ <p>두 번째 문단입니다.</p>
+ <p>세 번째 문단입니다.</p>
+</body>
+</html>
