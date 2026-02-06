@@ -1,0 +1,74 @@
+<!--
+// 데이터 타입 : 변수에 저장할 수 있는 데이터의 종류
+// Number(숫자)
+// String(문자열): 따옴표('', "")로 감싼 텍스트,
+// Boolean(불린): 참(True)과 거짓(False),
+// Undefined(정의되지 않음)
+// Null(널): 값이 없음 (의도적임)
+
+---------------------- 각 데이터 타입의 예시 ----------------------
+
+// Number (숫자) 타입
+let studentAge = 20;
+let height = 175.5;
+let temperature = -5;
+
+console.log(studentAge); // 결과: 20
+console.log(typeof studentAge); // 결과: "number"
+
+// String (문자열) 타입
+let studentName = "김개발";
+let greeting = '안녕하세요!';
+let message = "오늘 온도는 " + temperature + "도입니다.";
+
+console.log(studentName); // 결과: 김개발
+console.log(typeof studentName); // 결과: "string"
+
+// Boolean (불린) 타입
+let isStudent = true;
+let isGraduated = false;
+
+console.log(isStudent); // 결과: true
+console.log(typeof isStudent); // 결과: "boolean"
+
+// Undefined 타입
+let futureJob;
+console.log(futureJob); // 결과: undefined
+console.log(typeof futureJob); // 결과: "undefined"
+
+// Null 타입
+let previousJob = null;
+console.log(previousJob); // 결과: null
+console.log(typeof previousJob); // 결과: "object" (JavaScript의 특이한 점!)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>데이터 타입 예시</title>
+</head>
+<body>
+<script>
+
+    // 다양한 값의 타입 확인해보기
+console.log(typeof 42); // "number"
+console.log(typeof "Hello"); // "string"
+console.log(typeof true); // "boolean"
+console.log(typeof undefined); // "undefined"
+console.log(typeof null); // "object" (주의!)
+
+// 자동 타입 변환 체험
+let score = 85;
+let result = "당신의 점수는 " + score + "점입니다.";
+console.log(result); // "당신의 점수는 85점입니다."
+console.log(typeof result); // "string"
+
+// 숫자와 문자열 구분하기
+let numberValue = 100;
+let stringValue = "100";
+console.log(numberValue + 50); // 150 (숫자 계산)
+console.log(stringValue + 50); // "10050" (문자열 연결)
+
+</script>
+</body>

@@ -1,0 +1,63 @@
+<!--
+// 변수를 만드는 방법 : (변수 선언) (변수명) = (값)
+// let - 값을 바꿀 수 있는 변수
+// const - 값을 바꿀 수 없는 상수
+// var - 예전 방식
+-->
+
+<!--
+let score = 100;        // 점수는 바뀔 수 있으니까 let
+const PI = 3.14159;     // 원주율은 절대 바뀌지 않으니까 const
+score = 95;             // OK! let으로 선언했으니 변경 가능
+// PI = 3.14;           // ERROR! const는 변경 불가능
+-->
+
+<!--
+// 변수명 규칙 :
+// 1. 영문자, 숫자, 언더스코어(_), 달러 기호($)만 사용 가능
+// 2. 숫자로 시작할 수 없음
+// 3. 예약어(JavaScript가 이미 사용하는 단어) 사용 불가
+// 4. 대소문자를 구분함
+-->
+
+<!--
+// 올바른 변수명
+let userName = "김개발";
+let user_age = 20;
+let $price = 1000;
+let studentCount2 = 30;
+
+// 잘못된 변수명
+// let 2student = 30;    // 숫자로 시작
+// let user-name = "김개발";  // 하이픈 사용
+// let let = "변수";      // 예약어 사용
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>변수 실습</title>
+</head>
+<body>
+    <h1>변수와 상수 실습</h1>
+
+<script>
+    let score = 85;
+    console.log("초기 점수:", score);
+
+    // 점수 변경
+    score = 90;
+    console.log("변경된 점수:", score);
+
+    // 점수에 5점 추가
+    score = score + 5;
+    console.log("5점 추가 후:", score);
+
+    // 더 간단한 방법
+    score += 10;  // score = score + 10과 같음
+    console.log("10점 더 추가 후:", score);
+</script>
+
+</body>
+</html>

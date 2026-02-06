@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>데이터 타입 예시 2</title>
+</head>
+<body>
+<script>
+// 사용자 정보 관리 시스템
+let userInfo = {
+ name: "김개발", // string
+ age: 20, // number
+ height: 175.8, // number
+ isStudent: true, // boolean
+ graduationYear: null, // null (아직 졸업 안함)
+ favoriteColor: undefined // undefined (아직 정하지 않음)
+};
+
+// 타입별 처리 함수
+function processUserData(user) {
+ console.log("=== 사용자 정보 분석 ===");
+
+ // 문자열 처리
+ if (typeof user.name === "string") {
+ console.log("이름: " + user.name + " (길이: " + user.name.length + "자)");
+ }
+
+ // 숫자 처리
+ if (typeof user.age === "number") {
+ console.log("나이: " + user.age + "세 (성인 여부: " + (user.age >= 20) + ")");
+ }
+
+ // 불린 처리
+ if (typeof user.isStudent === "boolean") {
+ console.log("학생 여부: " + (user.isStudent ? "재학중" : "비학생"));
+ }
+
+ // null과 undefined 처리
+ if (user.graduationYear === null) {
+ console.log("졸업년도: 미정 (재학중)");
+ }
+
+ if (user.favoriteColor === undefined) {
+ console.log("선호색상: 아직 선택하지 않음");
+ }
+}
+
+processUserData(userInfo);
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>문자열 예시 2</title>
+</head>
+<body>
+<script>
+    let productName = "스마트폰";
+let price = 899000;
+let discount = 10;
+
+// 여러 데이터 타입 조합
+let productInfo = `상품명: ${productName}
+원가: ${price.toLocaleString()}원
+할인율: ${discount}%
+할인가: ${(price * (100 - discount) / 100).toLocaleString()}원`;
+
+console.log(productInfo);  // 템플릿 리터럴(백틱(``) 사용 방식) 안에서는 줄바꿈도 그대로 반영된다.
+</script>
+
+</body>
+</html>
